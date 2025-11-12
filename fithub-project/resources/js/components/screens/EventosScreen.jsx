@@ -137,11 +137,8 @@ const CadastroEvento = () => {
         {/* Navbar inferior */}
         <nav className="absolute bottom-0 left-0 right-0 bg-black/50 backdrop-blur-md border-t border-white/10 py-2">
           <div className="flex justify-around text-white text-sm">
-            <Link to="/inicio" className="flex flex-col items-center hover:opacity-80">
+            <Link to="/tela-principal" className="flex flex-col items-center hover:opacity-80">
               <span className="text-[10px] mt-1">Início</span>
-            </Link>
-            <Link to="/eventos" className="flex flex-col items-center hover:opacity-80">
-              <span className="text-[10px] mt-1">Eventos</span>
             </Link>
             <button onClick={handleLogout} className="flex flex-col items-center hover:opacity-80">
               <span className="text-[10px] mt-1">Sair</span>
@@ -153,4 +150,4 @@ const CadastroEvento = () => {
   );
 };
 
-export default <CadastroEvento/>;
+export default CadastroEvento; 
